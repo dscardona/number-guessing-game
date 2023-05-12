@@ -1,5 +1,6 @@
 # Welcome user to game
 from art import logo
+from replit import clear
 import random
 
 print(logo)
@@ -18,6 +19,20 @@ else:
   tries = 10
 
 # Ask player to make a guess, compare to target, print clue, take input again (loop)
+guess = int(input("Make a guess: "))
+
+while tries > 0:
+  if guess > target:
+    print("Too high, guess again: ")
+    tries -= 1
+  elif guess < target:
+    print("Too low, guess again: ")
+    tries -= 1
+  elif guess == target:
+    print("You guessed it. You win!")
+
+
+  
 # if tries expire: you lose
 # if guess = target before tries expire: you win
 #play again?
