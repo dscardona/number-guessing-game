@@ -4,8 +4,10 @@ import random
 def play_game():
   print(logo)
   print("Welcome to the number guessing game!")
+  
   target = random.randint(1, 100)
-  print(target)
+  #test code
+  # print(target)
   
   print("I'm thinking of a number between 1 and 100.")
   
